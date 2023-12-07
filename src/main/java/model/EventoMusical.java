@@ -57,6 +57,10 @@ public class EventoMusical {
 		this.artistasAsociados = artistasAsociados;
 	}
 
+    public void agregarArtista(Artista artista){
+        getArtistasAsociados().add(artista);
+    }
+
 	@Override
 	public String toString() {
 		return getNombre()+","+getFecha()+","+getLugar()+","+getArtistasAsociados();

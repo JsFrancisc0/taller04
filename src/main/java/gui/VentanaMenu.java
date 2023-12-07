@@ -3,6 +3,7 @@ package gui;
 import model.EventoMusical;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,7 +11,7 @@ public class VentanaMenu extends JFrame implements ActionListener {
 
     JButton registroEvento, registroAsistente, registroArtista, ventaEntradas;
 
-    VentanaMenu() {
+    public VentanaMenu() {
 
         registroEvento = new JButton("Registrar Evento");
         registroEvento.addActionListener(this);
@@ -25,15 +26,15 @@ public class VentanaMenu extends JFrame implements ActionListener {
         ventaEntradas.addActionListener(this);
 
 
-        this.setTitle("Trabajadores");
+        this.setTitle("Menu Principal");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.add(registroEvento);
         this.add(registroArtista);
         this.add(registroAsistente);
         this.add(ventaEntradas);
-        this.setSize(640,480);
+        this.setSize(300,480);
         this.setResizable(false);
-        //this.setLayout(null);
+        this.setLayout(new GridLayout(4,1));
         this.setVisible(true);
     }
 
