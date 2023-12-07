@@ -41,5 +41,21 @@ public class VentanaMenu extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if (e.getSource()==registroEvento){
+            VentanaEvento ventanaEvento = new VentanaEvento();
+        }
+
+        if (e.getSource()==registroArtista){
+            VentanaArtista ventanaArtista = new VentanaArtista();
+        }
+
+        if (e.getSource()==registroAsistente){
+            VentanaAsistente ventanaAsistente = new VentanaAsistente();
+        }
+
+        if (e.getSource()==ventaEntradas){
+            VentanaEntradas ventanaEntradas = new VentanaEntradas();
+        }
+
     }
 }
