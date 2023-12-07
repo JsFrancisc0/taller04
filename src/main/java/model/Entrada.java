@@ -30,4 +30,8 @@ public class Entrada {
 		this.precioGeneral = precioGeneral;
 	}
 
+	@Override
+	public String toString() {
+		return getPrecioGeneral()+","+getPrecioVip();
+	}
 }

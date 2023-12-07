@@ -45,4 +45,8 @@ public class Asistente {
 		this.preferenciasMusicales = preferenciasMusicales;
 	}
 
+	@Override
+	public String toString() {
+		return getNombre()+","+getEmail()+","+getPreferenciasMusicales();
+	}
 }

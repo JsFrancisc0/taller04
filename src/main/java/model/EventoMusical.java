@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 public class EventoMusical {
 
 	private String nombre;
@@ -55,4 +57,8 @@ public class EventoMusical {
 		this.artistasAsociados = artistasAsociados;
 	}
 
+	@Override
+	public String toString() {
+		return getNombre()+","+getFecha()+","+getLugar()+","+getArtistasAsociados();
+	}
 }

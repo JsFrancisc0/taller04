@@ -29,4 +29,8 @@ public class Artista {
 		this.generoMusical = generoMusical;
 	}
 
+	@Override
+	public String toString() {
+		return getNombre()+","+getGeneroMusical();
+	}
 }
